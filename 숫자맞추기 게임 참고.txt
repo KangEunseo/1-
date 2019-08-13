@@ -1,0 +1,4 @@
+Random r=new Random();
+int n=r.nextInt(100);  //1-100사이의 숫자(난수)를 컴퓨터가 발생
+10번 입력받기 넘으면 lose
+Test 마지막 꺼

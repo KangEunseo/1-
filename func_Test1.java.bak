@@ -1,0 +1,10 @@
+class func_Test1 {
+	public void add(){
+		System.out.println(20+18);
+	}
+
+	public static void main(String ar[]){
+		func_Test1 t=new func_Test1();
+		func_Test1.add();
+	}
+}

@@ -1,0 +1,27 @@
+1. reached end of file-----
+: {}문제, 갯수 확인
+
+2. variable i is already defined.....
+: 이미 있는 변수를 또 선언할 때
+
+3. in compatible types: possible lossy.....
+: casting 안했을 때
+
+4. cannot find symbol
+: 변수선언 안하고 사용할 때(방을 안 만들고 사용할 때)
+
+5. ...might not have been initialized...
+: 변수 초기화 안해줬을 때
+
+6. 기본 클래스를 찾거나 로드할 수 없습니다;
+==> 파일 이름과 클래스 이름이 동일한 지 확인
+
+7. illegal start of expression: 문장 시작이 잘못
+  Public.....
+  int c='*';
+
+8. ; expected
+==> ; 안 찍었을 때 ..> 찍으면 됌
+
+9. ArrayIndexOutOfBoundsException: 숫자
+==> 배열 방의 갯수 확인         //방이 없는데 방을 사용하려고 할 때

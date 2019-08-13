@@ -1,0 +1,13 @@
+class Switch_Test3 {
+ public static void main(String ar[]) {
+   int score=78;
+   switch(score/10) {
+	case 10:System.out.println('A');
+    case 9:System.out.println('A');
+    case 8:System.out.println('B');
+    case 7:System.out.println('C');
+	case 6:System.out.println('D');
+	default:System.out.println('F');//왜 C 혼자 안나와!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   }
+}
+}

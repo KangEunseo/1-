@@ -1,0 +1,20 @@
+1. 스레드 동작 컴포넌트 지정
+
+2. 스레드 상속받은 클래스 만들기
+ - 스레드 동작과 연결할 컴포넌트를 필드로 정의
+ - 생성자 매개변수로 가져와 초기화 필수
+ - run() 정의 필수 => 스레드가 동작하는 메서드입니다.
+
+3. 메인클래스 생성자에서 스레드 생성하고 start() 하기
+ - start()를 호출하면 자동으로 스레드의 run() 메서드가 실행됨
+
+* 메인 클래스에서 스레드클래스 타입 객체 생성방법 2가지
+1) Thread class 상속 받은 스레드클래스일 경우
+     class TimerThread extends Thread{} 경우
+ =>메인클래스 객체 초기화 방법
+     TimerThread th=new TimerThread();
+
+2) Runnable interface 상속 받은 스레드클래스일 경우
+     class TimerThread implements Runnable{} 경우
+ =>메인클래스 객체 초기화 방법
+     Thread th=new Thread(new TimerThread());

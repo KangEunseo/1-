@@ -1,0 +1,81 @@
+import java.util.*;
+
+class Product{
+	Scanner sc=new Scanner(System.in);
+	private String name;
+	private int price;
+	private int count;
+	public Product(){	}
+	public Product(String name, int price, int count){
+		this.name=name;
+		this.price=price;
+		this.count=count;
+	}
+	public void setName(String name){
+		this.name=name;
+	}
+	public String getName(){
+		return name;
+	}
+	public void setPrice(int price){
+		this.price=price;
+	}
+	public void setCount(int price){
+		this.count=count;
+	}
+	public int getPrice(){
+		return (price*count);
+	}
+	public void pr(){
+		System.out.println("이름 : "+this.getName()+", 가격 : "+price*count);
+	}
+	public String toString(){
+		return("이름 : "+this.getName()+", 가격 : "+this.getPrice());
+	}
+}
+
+class DiscountProduct extends Product{
+	private int discount=sc.nextInt();
+	public DiscountProduct(){	}
+	public DiscountProduct(String name, int price, int count, int discount){
+		super(name, price, count);
+		this.discount=discount;
+	}
+	public void setDiscount(int price){
+		this.discount=discount;
+	}
+	public int getDiscount(){
+		return discount;
+	}
+	public int getPrice(){
+		return (super.getPrice()*this.discount/100);
+	}
+	public void pr(){
+		System.out.println("이름 : "+super.getName()+"할인, 가격 : "+this.getPrice());
+	}
+	public String toString(){
+		return("이름 : "+super.getName()+"할인, 가격 : "+this.getPrice());
+	}
+}
+
+class J_1401{
+	public static void main(String ar[]){
+		Scanner sc=new Scanner(System.in);
+		Product p1=new Product();
+		System.out.print("이름 >> ");
+		p1.setName(sc.next());
+		System.out.print("가격 >> ");
+		p1.setPrice(sc.nextInt());
+		System.out.print("개수 >> ");
+		p1.setCount(sc.nextInt());
+		System.out.println(p1.toString());
+		DiscountProduct p2=new DiscountProduct();
+		System.out.print("이름 >> ");
+		p2.setName(sc.next());
+		System.out.print("가격 >> ");
+		p2.setPrice(sc.nextInt());
+		System.out.print("개수 >> ");
+		p2.setCount(sc.nextInt());
+		System.out.println(p2.toString());
+	}
+}

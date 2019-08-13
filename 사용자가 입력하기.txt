@@ -1,0 +1,10 @@
+<<사용자가 데이터를 입력받는 법>>
+
+import java.util.*;
+
+class Test{
+  //main
+  Scanner scan=new Scanner(System.in); //(=내가 키보드에서 데이터를 읽어오겠다)
+  정수읽어오기:int a=scan.nextInt();
+  문자/문자열:String s=scan.next()/scan.nextLine()
+  더블:double d=scan.nextDouble();

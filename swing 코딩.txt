@@ -1,0 +1,25 @@
+1. 클래스 생성 > 메인체크
+2. extends JFrame : Swing 코딩하려면 상속 필수
+    : 자동 important (Ctrl+shift+o)
+3. 생성자(클래스 이름과 같은 이름을 가지게 메소드 생성)
+4. main 안에 생성자 초기화(new 생성자())
+5. 생성자 안에 코딩 하는 순서
+     ① setTitle("제목");
+     ② setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+     ③ Container cp=getContentPane();
+
+      // 레이아웃 변경(setLayout), 컴포넌트 추가(add)
+
+     ④ setSize(가로, 세로);
+     ⑤ setVisible(true);
+===============================================
+1) cp.setLayout(new GrideLayout(3, 4));  // 3행 4열 테이블 형태
+     // 배열 for문 활용해서 처리
+     String arr[]={"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "+", "="};
+     // 배열첨자 0~11
+
+2)  cp.setLayout(null);  // 배치 설정하지 않음
+     ex) JButton btn=new JButton("이름");
+           btn.setSize(100, 30);  // 버튼 크기
+           btn.setLocation(10, 10);  // 버튼 좌표
+           cp.add(btn);
